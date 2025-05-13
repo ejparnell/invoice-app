@@ -1,0 +1,19 @@
+:root {
+    --font-size-heading-lg: 36px;
+    --font-size-heading-md: 24px;
+    --font-size-heading-sm: 15px;
+    --font-size-body: 13px;
+
+    --line-height-heading-lg: 33px;
+    --line-height-heading-md: 22px;
+    --line-height-heading-sm: 24px;
+    --line-height-heading-sm-variant: 15px;
+    --line-height-body: 18px;
+    --line-height-body-variant: 15px;
+
+    --letter-spacing-heading-lg: -1.13px;
+    --letter-spacing-heading-md: -0.75px;
+    --letter-spacing-heading-sm: -0.25px;
+    --letter-spacing-body: -0.1px;
+    --letter-spacing-body-variant: -0.25px;
+}

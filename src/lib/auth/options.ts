@@ -24,7 +24,7 @@ export function buildAuthOptions(): NextAuthOptions {
                     }
                     const ok = await bcrypt.compare(password, user.password);
                     if (!ok) return null;
-                    return { id: user.id, name: user.name, email: user.email };
+                    return { id: user._id, name: user.name, email: user.email };
                 },
             }),
         ],

@@ -1,0 +1,23 @@
+@import './variables.css';
+@import './typography.css';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-background: var(--color-11);
+}
+
+[data-theme='dark'] {
+    --color-background: var(--color-12);
+}
+
+body {
+    background-color: var(--color-background);
+    height: 100vh;
+}

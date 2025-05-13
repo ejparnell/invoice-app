@@ -1,0 +1,46 @@
+.nav {
+    height: 72px;
+    background-color: var(--color-03);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 72px;
+    width: 72px;
+    background-color: var(--color-01);
+    position: relative;
+    border-radius: 0 25px 25px 0;
+}
+
+.logoImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.logoBottom {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--color-02);
+    height: 36px;
+    width: 100%;
+    border-radius: 25px 0 25px 0;
+}
+
+.divider {
+    width: 1px;
+    height: 72px;
+    background-color: #494E6E;
+}
+
+.navItems {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    margin-right: 24px;
+}

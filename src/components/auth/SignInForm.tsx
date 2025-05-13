@@ -57,7 +57,7 @@ export default function SignInForm() {
         const res = await signIn('credentials', {
             redirect: false,
             ...fields,
-            callbackUrl: params.get('callbackUrl') ?? '/dashboard',
+            callbackUrl: params.get('callbackUrl') ?? '/invoices',
         });
 
         setLoading(false);
@@ -67,7 +67,7 @@ export default function SignInForm() {
             return;
         }
 
-        router.push(res?.url ?? '/dashboard');
+        router.push(res?.url ?? '/invoices');
     }
 
     return (
