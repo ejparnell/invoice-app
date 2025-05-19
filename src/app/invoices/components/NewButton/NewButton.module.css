@@ -1,0 +1,26 @@
+.newButton {
+    background-color: var(--color-01);
+    border-radius: 24px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 17px 8px 8px;
+    border: none;
+    gap: 8px;
+}
+
+.iconBg {
+    background-color: white;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newButton:hover {
+    background-color: var(--color-02);
+    cursor: pointer;
+}

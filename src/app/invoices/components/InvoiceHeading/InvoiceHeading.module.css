@@ -1,0 +1,7 @@
+.headerTitle {
+    color: var(--font-color-primary);
+}
+
+.headerSubtext {
+    color: var(--font-color-secondary);
+}

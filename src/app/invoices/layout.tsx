@@ -1,5 +1,6 @@
 import { InvoiceProvider } from './context/InvoiceProvider';
-import InvoiceHeader from './components/InvoiceHeader';
+import InvoiceHeader from './components/InvoiceActions';
+import styles from './layout.module.css';
 
 export default function InvoiceLayout({
     children,
@@ -8,8 +9,10 @@ export default function InvoiceLayout({
 }) {
     return (
         <InvoiceProvider>
-            <InvoiceHeader />
-            {children}
+            <div className={styles.container}>
+                <InvoiceHeader />
+                {children}
+            </div>
         </InvoiceProvider>
     );
 }

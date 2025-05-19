@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
 import { getInvoices } from '../services';
-import { Invoice } from '@/types/invoice';
+import { Invoice, InvoiceStatus } from '@/types/invoice';
 
 interface InvoiceContextType {
     invoices: Invoice[];
@@ -13,6 +13,7 @@ const InvoiceContext = createContext<InvoiceContextType | undefined>(undefined);
 
 export function InvoiceProvider({ children }: { children: React.ReactNode }) {
     const [invoices, setInvoices] = useState<Invoice[]>([]);
+    const [selectedOption, setSelectedOption] = useState<InvoiceStatus>(InvoiceStatus.Draft);
 
     // On load
     useEffect(() => {
@@ -32,9 +33,7 @@ export function InvoiceProvider({ children }: { children: React.ReactNode }) {
         
     }, [invoices]);
 
-    function handleFilter(filter: string) {
-        
-    }
+    function handleFilter(filter: string) {}
 
     function fetchInvoices() {}
 

@@ -1,0 +1,88 @@
+.wrapper {
+    position: relative;
+}
+
+.selector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--input-border-color);
+    background: var(--input-background-color);
+    cursor: pointer;
+    padding: 10px;
+    height: 48px;
+    border-radius: var(--input-border-radius);
+    color: var(--font-color-primary);
+    width: 100%;
+}
+
+.selectorFocus {
+    outline: none;
+    border-color: var(--color-01);
+}
+
+.popover {
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    z-index: 10;
+    width: 260px;
+    padding: 15px;
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--input-border-radius);
+    background: var(--input-background-color);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0 0.3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+}
+
+.dow {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--color-07);
+}
+
+.day {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: var(--font-color-primary);
+}
+
+.day:hover {
+    background: var(--color-05);
+}
+
+.muted {
+    color: var(--font-color-secondary);
+}
+
+.selected {
+    background: var(--color-01);
+    color: #fff;
+}
+
+.monthLabel {
+    color: var(--font-color-primary);
+}

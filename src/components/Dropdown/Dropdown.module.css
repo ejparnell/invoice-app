@@ -1,0 +1,57 @@
+.container {
+    position: relative;
+}
+
+.selector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--input-border-color);
+    background: var(--input-background-color);
+    cursor: pointer;
+    padding: 10px;
+    height: 48px;
+    border-radius: var(--input-border-radius);
+    color: var(--font-color-primary);
+    width: 100%;
+}
+
+.selectorFocus {
+    outline: none;
+    border-color: var(--color-01);
+}
+
+.options {
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    z-index: 10;
+    width: 260px;
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--input-border-radius);
+    background: var(--input-background-color);
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.separator {
+    width: 100%;
+    border-color: var(--hr);
+    opacity: 40%;
+}
+
+.selected {
+    color: var(--color-01);
+}
+
+.unselected {
+    color: var(--font-color-primary);
+}
+
+.optionText {
+    padding: 10px 20px;
+}

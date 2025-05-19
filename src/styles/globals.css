@@ -11,10 +11,47 @@
 
 :root {
     --color-background: var(--color-11);
+    --font-color-primary: var(--color-08);
+    --font-color-secondary: var(--color-06);
+
+    --modal-background-color: white;
+
+    --input-border-color: var(--color-05);
+    --input-background-color: white;
+    --input-placeholder-color: var(--color-05);
+    --input-border-radius: 4px;
+
+    --hr: var(--color-05);
+
+    --item-btn-color: #F9FAFE;
+    --item-btn-font: var(--color-07);
+
+    --discard-btn-color: #F9FAFE;
+    --discard-btn-font: var(--color-07);
+    --saveDraft-btn-color: #373B53;
+    --saveDraft-btn-font: var(--color-06);
+
+    --invcoice-controls-background: white;
 }
 
 [data-theme='dark'] {
     --color-background: var(--color-12);
+    --font-color-primary: white;
+
+    --modal-background-color: var(--color-12);
+
+    --input-border-color: var(--color-04);
+    --input-background-color: var(--color-03);
+
+    --hr: var(--color-03);
+
+    --item-btn-color: var(--color-04);
+    --item-btn-font: var(--color-06);
+
+    --discard-btn-color: var(--color-04);
+    --discard-btn-font: var(--color-05);
+
+    --invcoice-controls-background: var(--color-03);
 }
 
 body {

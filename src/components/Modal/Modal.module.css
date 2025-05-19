@@ -1,0 +1,29 @@
+.modal {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--modal-background-color);
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.closeBtn {
+    background-color: transparent;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close {
+    color: var(--font-color-primary);
+}
+
+.header {
+    margin-top: 20px;
+    color: var(--font-color-primary);
+}

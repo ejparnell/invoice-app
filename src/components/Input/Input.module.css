@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex:1 1 0;
+    min-width: 64px;
+}
+
+.label {
+    color: var(--color-07);
+}
+
+.input {
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--input-border-radius);
+    color: var(--font-color-primary);
+    padding: 10px;
+    background-color: var(--input-background-color);
+}
+
+.input::placeholder {
+    color: var(--color-05);
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--color-02);
+}

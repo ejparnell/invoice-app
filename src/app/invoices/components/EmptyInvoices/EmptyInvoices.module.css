@@ -1,0 +1,18 @@
+.emptyTitle {
+    color: var(--font-color-primary);
+    text-align: center;
+}
+
+.emptySubtitle {
+    color: var(--font-color-secondary);
+    text-align: center;
+}
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 206px;
+}
